@@ -1,12 +1,13 @@
 document.addEventListener('DOMContentLoaded', function(){
     new Typed('.typed-text', {
         strings: [
-            "PhD Student @ National Taiwan University",
-            "Interests: Computational Complex Systems"
+            "Status: PhD @ National Taiwan University",
+            "Status: PhD @ National Taiwan University<br>Interests: Computational Complex Systems"
         ],
-        typeSpeed: 80,
-        backSpeed: 50,
-        backDelay: 2500,
+        typeSpeed: 50,
+        backSpeed: 10,
+        backDelay: 3000,
+        smartBackspace: true,
         loop: true
     });
 });
