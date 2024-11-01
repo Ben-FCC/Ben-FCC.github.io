@@ -15,8 +15,22 @@ body {
 }
 
 h1 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 4em;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
     color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(45deg, #fefefe, #f68989);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn1 1.5s ease-in-out;
+}
+
+@keyframes fadeIn1 {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
 .status {
@@ -25,10 +39,19 @@ h1 {
     display: inline-block;
     color: #f0f0f0;
 }
+
+.gif {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .terminal-container {
     display: flex;
     justify-content: center;
     width: 100%;
+    animation: fadeIn1 1.5s ease-in-out;
 }
 .terminal-box {
     background-color: #333333; /* Dark background for the terminal */
@@ -77,11 +100,17 @@ h1 {
     border: 3px solid #00ffcc; /* Adding a border to match the theme */
 }
 
+@keyframes fadeIn2 {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
 .links a {
     margin: 0 12px;
     font-size: 1.0em;
     text-decoration: none;
-    color: #00ffcc;
+    color: #fb9f9fbb;
+    animation: fadeIn2 1.5s ease-in-out;
 }
 
 .links a:hover {
