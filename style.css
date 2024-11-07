@@ -31,7 +31,7 @@ h1 {
 
 .status {
     font-size: 2.0em;
-    margin-top: 15px;
+    margin-top: 5px;
     display: inline-block;
     color: #f0f0f0;
 }
@@ -41,6 +41,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    animation: fadeIn2 1.5s ease-in-out;
 }
 
 .terminal-container {
