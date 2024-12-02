@@ -51,6 +51,7 @@ h1 {
     animation: fadeIn1 1.5s ease-in-out;
 }
 .terminal-box {
+    height: 50px;
     background-color: #333333; /* Dark background for the terminal */
     color: #e8eab5; /* Green text color */
     padding: 20px 30px;
