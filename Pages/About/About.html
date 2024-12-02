@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="about-container">
+    <!-- Header Section -->
+    <h1>About Me</h1>
+    <p class="intro">
+      I am currently a Ph.D. student under the supervision of Andy Chen at CHENLab. My research interests focus on leveraging multimodal methods, including fMRI, social network analysis, and nonverbal behavior, combined with naturalistic paradigms to study the mechanisms behind interacting minds and emergent properties in human interactions.
+    </p>
+
+    <!-- Section Tabs -->
+    <div class="tabs">
+      <button class="tab-button active" id="bio-tab">Bio</button>
+      <button class="tab-button" id="skills-tab">Skills</button>
+      <button class="tab-button" id="publications-tab">Publications</button>
+    </div>
+
+    <!-- Bio Section -->
+    <div id="bio" class="tab-content active">
+      <section class="timeline-section">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="event">
+            <span class="year">2023 - Present</span>
+            <div class="description">Ph.D. in Psychology, National Taiwan University</div>
+          </div>
+          <div class="event">
+            <span class="year">2017 - 2022</span>
+            <div class="description">B.Sc. in Physics, National Taiwan University</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="timeline-section">
+        <h2>Awards and Honors</h2>
+        <div class="timeline">
+          <div class="event">
+            <span class="year">2024 - 2028</span>
+            <div class="description">Academia Sinica Fellowship for Elite Ph.D. in HSS</div>
+          </div>
+          <div class="event">
+            <span class="year">2024</span>
+            <div class="description">TPA Annual Conference Yang Kuo-Shu Travel Grants</div>
+          </div>
+          <div class="event">
+            <span class="year">2023 - 2025</span>
+            <div class="description">NTU Doctoral Scholarship</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="tab-content">
+      <section>
+        <h2>Technical Skills</h2>
+        <p>
+          <strong>Programming:</strong> Python (Scikit-learn, Pytorch, TensorFlow), MATLAB, JavaScript, Node.js, Java, C, C++<br>
+          <strong>Neuroimaging:</strong> Nltools, Nilearn, BrainIAK, fMRIPrep<br>
+          <strong>Data Analysis:</strong> RSA, IS-RSA, SNA, ML/DL, ANOVA, GLM, HMM<br>
+          <strong>Nonverbal Behavior Analysis:</strong> Py-Feat, OpenFace, OpenPose<br>
+          <strong>Web Development:</strong> Meteor, SQL, BASH
+        </p>
+      </section>
+    </div>
+        <!-- Publications Section -->
+        <div id="publications" class="tab-content">
+          <section>
+            <h2>Selected Publications</h2>
+            <p>
+              <em>Chen, P.-H. A., Chiu, T.-A. P., Hsiao, P.-Y. A., & Chou, F.-C. B.</em> (In press). From experiences to preferences: Neural insights through a naturalistic neuroimaging paradigm. <strong>Neuroeconomics: Core Topics and Current Directions.</strong>
+            </p>
+            <p>
+              <em>Hsiao, P.-Y. A., Kim, M. J., Chou, F.-C. B., & Chen, P.-H. A.</em> (2024). Intersubject representational similarity analysis uncovers the impact of state anxiety on brain activation patterns in the human extrastriate cortex. <strong>Brain Imaging and Behavior, 18(2),</strong> 1-9.
+            </p>
+          </section>
+          <section>
+            <h2>Manuscripts Under Review</h2>
+            <p>
+              <em>Chou, F.-C. B.,* Chen, Y.-C. C.,* et al.</em> (Under revision). Facial insights: An exploration of similarity in spontaneous facial behaviors during pandemic lockdown. <strong>PsyArXiv.</strong>
+            </p>
+            <p>
+              <em>Kuo, Y.-S. A.,* Chou, F.-C. B.,* et al.</em> (Under review). Social isolation strengthens the association between intersubject similarity in fantasy and similarity in affective appraisal. <strong>PsyArXiv.</strong>
+            </p>
+          </section>
+        </div>
+      </div>
+    <script>
+        // JavaScript for Tab Switching
+        document.addEventListener('DOMContentLoaded', () => {
+          const tabs = document.querySelectorAll('.tab-button');
+          const contents = document.querySelectorAll('.tab-content');
+    
+          tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+              tabs.forEach(t => t.classList.remove('active'));
+              contents.forEach(content => content.classList.remove('active'));
+    
+              tab.classList.add('active');
+              document.querySelector(`#${tab.id.replace('-tab', '')}`).classList.add('active');
+            });
+          });
+        });
+      </script>
+    </body>
+    </html>
