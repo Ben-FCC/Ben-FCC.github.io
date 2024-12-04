@@ -91,11 +91,12 @@ body {
   }
   
   .timeline span {
-    font-weight: bold;
+    font-weight: normal;
+    font-size: 1.1em;
     background-color: #e21d23;
     color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 2px 5px;
+    border-radius: 7px;
   }
   
   .timeline li::before {
@@ -103,8 +104,15 @@ body {
     position: absolute;
     left: -7px;
     top: 5px;
-    width: 12px;
+    width: 24px;
     height: 12px;
     background-color: #e21d23;
-    border-radius: 50%;
+    border-radius: 100%;
+  }
+
+  .description {
+    font-size: 20px;
+    color: #020202;
+    line-height: 1.1;
+    margin: 10px 0;
   }
