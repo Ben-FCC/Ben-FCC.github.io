@@ -47,27 +47,24 @@
             <span class="year">2017 - 2022</span>
             <div class="description">B.Sc. in Physics, National Taiwan University</div>
           </div>
-          </div>
-          <div class="photo-container">
-            <img src="selfie.JPEG" alt="Ben's Selfie" style="width: 300px; height: 300px;">>
-          </div>
-      </section>
-
-      <section class="timeline-section">
+        </div>
         <h2>Awards and Honors</h2>
         <div class="timeline">
+          <div class="event">
+            <span class="year">2024 - 2025</span>
+            <div class="description">TPA Annual Conference Yang Kuo-Shu Travel Grants</div>
+          </div>
           <div class="event">
             <span class="year">2024 - 2028</span>
             <div class="description">Academia Sinica Fellowship for Elite Ph.D. in HSS</div>
           </div>
           <div class="event">
-            <span class="year">2024</span>
-            <div class="description">TPA Annual Conference Yang Kuo-Shu Travel Grants</div>
-          </div>
-          <div class="event">
             <span class="year">2023 - 2025</span>
             <div class="description">NTU Doctoral Scholarship</div>
           </div>
+        </div>
+        <div class="photo-container">
+          <img src="selfie.JPEG" alt="My selfie">
         </div>
       </section>
     </div>
@@ -76,53 +73,69 @@
     <div id="skills" class="tab-content">
       <section>
         <h2>Technical Skills</h2>
+        <div class="skills-container">
+          <div class="skill-block">
+            <h3>Programming</h3>
+            <p>Python (Scikit-learn, Pytorch, TensorFlow), MATLAB, JavaScript, Node.js, Java, C, C++</p>
+          </div>
+          <div class="skill-block">
+            <h3>Neuroimaging</h3>
+            <p>Nltools, Nilearn, BrainIAK, fMRIPrep</p>
+          </div>
+          <div class="skill-block">
+            <h3>Data Analysis</h3>
+            <p>RSA, IS-RSA, SNA, ML/DL, ANOVA, GLM, HMM</p>
+          </div>
+          <div class="skill-block">
+            <h3>Nonverbal Behavior Analysis</h3>
+            <p>Py-Feat, OpenFace, OpenPose</p>
+          </div>
+          <div class="skill-block">
+            <h3>Web Development</h3>
+            <p>Meteor, SQL, BASH</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Publications Section -->
+    <div id="publications" class="tab-content">
+      <section>
+        <h2>Publications</h2>
         <p>
-          <strong>Programming:</strong> Python (Scikit-learn, Pytorch, TensorFlow), MATLAB, JavaScript, Node.js, Java, C, C++<br>
-          <strong>Neuroimaging:</strong> Nltools, Nilearn, BrainIAK, fMRIPrep<br>
-          <strong>Data Analysis:</strong> RSA, IS-RSA, SNA, ML/DL, ANOVA, GLM, HMM<br>
-          <strong>Nonverbal Behavior Analysis:</strong> Py-Feat, OpenFace, OpenPose<br>
-          <strong>Web Development:</strong> Meteor, SQL, BASH
+          <em>Chen, P.-H. A., Chiu, T.-A. P., Hsiao, P.-Y. A., & Chou, F.-C. B.</em> (In press). From experiences to preferences: Neural insights through a
+        </p>
+        <p>
+          <em>Hsiao, P.-Y. A., Kim, M. J., Chou, F.-C. B., & Chen, P.-H. A.</em> (2024). Intersubject representational similarity analysis uncovers the impact of state anxiety on brain activation patterns in the human extrastriate cortex. <strong>Brain Imaging and Behavior, 18(2),</strong> 1-9.
+        </p>
+      </section>
+      <section>
+        <h2>Manuscripts Under Review</h2>
+        <p>
+          <em>Chou, F.-C. B.,* Chen, Y.-C. C.,* et al.</em> (Under revision). Facial insights: An exploration of similarity in spontaneous facial behaviors during pandemic lockdown. <strong>PsyArXiv.</strong>
+        </p>
+        <p>
+          <em>Kuo, Y.-S. A.,* Chou, F.-C. B.,* et al.</em> (Under review). Social isolation strengthens the association between intersubject similarity in fantasy and similarity in affective appraisal. <strong>PsyArXiv.</strong>
         </p>
       </section>
     </div>
-        <!-- Publications Section -->
-        <div id="publications" class="tab-content">
-          <section>
-            <h2>Selected Publications</h2>
-            <p>
-              <em>Chen, P.-H. A., Chiu, T.-A. P., Hsiao, P.-Y. A., & Chou, F.-C. B.</em> (In press). From experiences to preferences: Neural insights through a naturalistic neuroimaging paradigm. <strong>Neuroeconomics: Core Topics and Current Directions.</strong>
-            </p>
-            <p>
-              <em>Hsiao, P.-Y. A., Kim, M. J., Chou, F.-C. B., & Chen, P.-H. A.</em> (2024). Intersubject representational similarity analysis uncovers the impact of state anxiety on brain activation patterns in the human extrastriate cortex. <strong>Brain Imaging and Behavior, 18(2),</strong> 1-9.
-            </p>
-          </section>
-          <section>
-            <h2>Manuscripts Under Review</h2>
-            <p>
-              <em>Chou, F.-C. B.,* Chen, Y.-C. C.,* et al.</em> (Under revision). Facial insights: An exploration of similarity in spontaneous facial behaviors during pandemic lockdown. <strong>PsyArXiv.</strong>
-            </p>
-            <p>
-              <em>Kuo, Y.-S. A.,* Chou, F.-C. B.,* et al.</em> (Under review). Social isolation strengthens the association between intersubject similarity in fantasy and similarity in affective appraisal. <strong>PsyArXiv.</strong>
-            </p>
-          </section>
-        </div>
-      </div>
-    <script>
-        // JavaScript for Tab Switching
-        document.addEventListener('DOMContentLoaded', () => {
-          const tabs = document.querySelectorAll('.tab-button');
-          const contents = document.querySelectorAll('.tab-content');
-    
-          tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-              tabs.forEach(t => t.classList.remove('active'));
-              contents.forEach(content => content.classList.remove('active'));
-    
-              tab.classList.add('active');
-              document.querySelector(`#${tab.id.replace('-tab', '')}`).classList.add('active');
-            });
-          });
+  </div>
+  <script>
+    // JavaScript for Tab Switching
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabs = document.querySelectorAll('.tab-button');
+      const contents = document.querySelectorAll('.tab-content');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('active'));
+          contents.forEach(content => content.classList.remove('active'));
+
+          tab.classList.add('active');
+          document.querySelector(`#${tab.id.replace('-tab', '')}`).classList.add('active');
         });
-      </script>
-    </body>
-    </html>
+      });
+    });
+  </script>
+</body>
+</html>

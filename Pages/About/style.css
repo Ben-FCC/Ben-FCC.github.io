@@ -137,3 +137,43 @@ body {
     line-height: 1.1;
     margin: 10px 0;
   }
+
+  #skills {
+    display: none;
+  }
+
+  #skills.active {
+    display: block;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .skill-block {
+    background-color: #fdf5f4; /* Soft background color */
+    border: 1px solid #ef8f80; /* Light border color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .skill-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  }
+
+  .skill-block h3 {
+    margin-top: 0;
+    color: #333;
+  }
+
+  .skill-block p {
+    color: #666;
+  }
