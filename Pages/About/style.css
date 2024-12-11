@@ -1,179 +1,212 @@
 /* General body styling */
 body {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  /* Container for the About Me section */
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container for the About Me section */
+.about-container {
+  width: 80%;
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+  position: relative; /* Ensure container is relatively positioned */
+}
+
+/* Title styling */
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Introduction text */
+.intro {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.photo-container {
+  float: right;
+  width: 200px; /* Adjust the width of the image */
+  height: 200px; /* Adjust the height of the image */
+  border-radius: 50%; /* Ensure the container is circular */
+  overflow: hidden; /* Hide overflow content */
+  object-fit: cover; /* Ensure the image content fits the container */
+  position: absolute; /* Absolute positioning */
+  top: 450px; /* Distance from the top of the container */
+  right: 100px; /* Distance from the right of the container */
+}
+
+.photo-container img {
+  width: 100%; /* Adjust the width of the image */
+  height: 100%; /* Adjust the height of the image */
+  border-radius: 50%; /* Circular image */
+  box-shadow: 0 4px 6px rgba(40, 147, 159, 0.1);
+  object-fit: cover; /* Ensure the image content fits the container */
+}
+
+.intro a {
+  color: #e21d23;
+  text-decoration: none;
+}
+
+.intro a:hover {
+  text-decoration: underline;
+}
+
+/* Tab buttons */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  background-color: #ddd;
+  color: #333;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.tab-button.active {
+  background-color: #e21d23;
+  color: white;
+}
+
+/* Tab content sections */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  text-align: left;
+}
+
+/* Timeline styling */
+.timeline {
+  margin-top: 30px;
+  border-left: 2px solid #e21d23;
+  padding-left: 20px;
+}
+
+.timeline ul {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline li {
+  margin: 20px 0;
+  position: relative;
+}
+
+.timeline span {
+  font-weight: normal;
+  font-size: 1.1em;
+  background-color: #e21d23;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 7px;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 5px;
+  width: 24px;
+  height: 12px;
+  background-color: #e21d23;
+  border-radius: 100%;
+}
+
+.description {
+  font-size: 20px;
+  color: #020202;
+  line-height: 1.1;
+  margin: 10px 0;
+}
+
+#skills {
+  display: none;
+}
+
+#skills.active {
+  display: block;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.skill-block {
+  background-color: #fdf5f4; /* Soft background color */
+  border: 1px solid #ef8f80; /* Light border color */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-block:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.skill-block h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.skill-block p {
+  color: #666;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
   .about-container {
-    width: 80%;
-    max-width: 900px;
-    margin: 50px auto;
-    text-align: center;
-    position: relative; /* Ensure container is relatively positioned */
+    width: 90%;
+    margin: 20px auto;
   }
-  
-  /* Title styling */
-  h1 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  /* Introduction text */
-  .intro {
-    font-size: 1.2em;
-    color: #555;
-    line-height: 1.8;
-    margin-bottom: 30px;
-  }
-  
+
   .photo-container {
-    float: right;
-    width: 200px; /* Adjust the width of the image */
-    height: 200px; /* Adjust the height of the image */
-    border-radius: 50%; /* Ensure the container is circular */
-    overflow: hidden; /* Hide overflow content */
-    object-fit: cover; /* Ensure the image content fits the container */
-    position: absolute; /* Absolute positioning */
-    top: 450px; /* 50px from the top of the container */
-    right: 100px; /* 20px from the right of the container */
+    position: static; /* Remove absolute positioning */
+    float: none; /* Remove float */
+    margin: 0 auto 20px; /* Center the image */
+    width: 150px; /* Adjust the width of the image */
+    height: 150px; /* Adjust the height of the image */
   }
-  
-  .photo-container img {
-    width: 100%; /* Adjust the width of the image */
-    height: 100%; /* Adjust the height of the image */
-    border-radius: 50%; /* Circular image */
-    box-shadow: 0 4px 6px rgba(40, 147, 159, 0.1);
-    object-fit: cover; /* Ensure the image content fits the container */
-  }
-  
-  .intro a {
-    color: #e21d23;
-    text-decoration: none;
-  }
-  
-  .intro a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Tab buttons */
+
   .tabs {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    flex-direction: column;
   }
-  
+
   .tab-button {
-    padding: 10px 20px;
-    margin: 0 5px;
-    border: none;
-    background-color: #ddd;
-    color: #333;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1em;
-  }
-  
-  .tab-button.active {
-    background-color: #e21d23;
-    color: white;
-  }
-  
-  /* Tab content sections */
-  .tab-content {
-    display: none;
-  }
-  
-  .tab-content.active {
-    display: block;
-    text-align: left;
-  }
-  
-  /* Timeline styling */
-  .timeline {
-    margin-top: 30px;
-    border-left: 2px solid #e21d23;
-    padding-left: 20px;
-  }
-  
-  .timeline ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .timeline li {
-    margin: 20px 0;
-    position: relative;
-  }
-  
-  .timeline span {
-    font-weight: normal;
-    font-size: 1.1em;
-    background-color: #e21d23;
-    color: white;
-    padding: 2px 5px;
-    border-radius: 7px;
-  }
-  
-  .timeline li::before {
-    content: "";
-    position: absolute;
-    left: -7px;
-    top: 5px;
-    width: 24px;
-    height: 12px;
-    background-color: #e21d23;
-    border-radius: 100%;
-  }
-
-  .description {
-    font-size: 20px;
-    color: #020202;
-    line-height: 1.1;
-    margin: 10px 0;
-  }
-
-  #skills {
-    display: none;
-  }
-
-  #skills.active {
-    display: block;
+    margin: 5px 0;
   }
 
   .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .skill-block {
-    background-color: #fdf5f4; /* Soft background color */
-    border: 1px solid #ef8f80; /* Light border color */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    padding: 20px;
-    width: 250px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    width: 90%; /* Make skill blocks full width */
   }
-
-  .skill-block:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
-  }
-
-  .skill-block h3 {
-    margin-top: 0;
-    color: #333;
-  }
-
-  .skill-block p {
-    color: #666;
-  }
+}
