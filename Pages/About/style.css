@@ -1,17 +1,19 @@
 /* General body styling */
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
-  color: #333;
-  line-height: 1.6;
+  background-color: #fafafa;
+  color: #374151;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Container for the About Me section */
 .about-container {
   width: 80%;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 50px auto;
   text-align: center;
   position: relative; /* Ensure container is relatively positioned */
@@ -19,12 +21,16 @@ body {
 
 /* Title styling */
 h1 {
-  font-family: "HelveticaNeue-Light", 'Montserrat', sans-serif;
-  font-size: 4em;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  line-height: 1.5;
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 3.5em;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
   color: #ff566f;
+  margin-bottom: 1.5rem;
+  background: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
   animation: fadeIn1 1.5s ease-in-out;
 }
 
@@ -35,10 +41,28 @@ h1 {
 
 /* Introduction text */
 .intro {
-  font-size: 1.2em;
-  color: #555;
+  font-size: 1.125rem;
+  color: #4a5568;
   line-height: 1.8;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro a {
+  color: #ff566f; /* Match heading color */
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255, 86, 111, 0.2);
+  transition: all 0.2s ease;
+  padding-bottom: 2px;
+}
+
+.intro a:hover {
+  border-bottom-color: rgba(255, 86, 111, 0.8);
+  color: #ff7388; /* Slightly lighter on hover */
 }
 
 /* Desktop photo container styling */
@@ -57,15 +81,6 @@ h1 {
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-}
-
-.intro a {
-  color: #e21d23;
-  text-decoration: none;
-}
-
-.intro a:hover {
-  text-decoration: underline;
 }
 
 /* Tab buttons */
@@ -87,7 +102,7 @@ h1 {
 }
 
 .tab-button.active {
-  background-color: #e21d23;
+  background-color: #ff566f;
   color: white;
 }
 
@@ -104,7 +119,7 @@ h1 {
 /* Timeline styling */
 .timeline {
   margin-top: 30px;
-  border-left: 2px solid #e21d23;
+  border-left: 2px solid #ff566f;
   padding-left: 20px;
 }
 
@@ -121,7 +136,7 @@ h1 {
 .timeline span {
   font-weight: normal;
   font-size: 1.1em;
-  background-color: #e21d23;
+  background-color: #ff566f;
   color: white;
   padding: 2px 5px;
   border-radius: 7px;
@@ -134,7 +149,7 @@ h1 {
   top: 5px;
   width: 24px;
   height: 12px;
-  background-color: #e21d23;
+  background-color: #ff566f;
   border-radius: 100%;
 }
 
@@ -154,35 +169,53 @@ h1 {
 }
 
 .skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
 }
 
 .skill-block {
-  background-color: #fdf5f4; /* Soft background color */
-  border: 1px solid #ef8f80; /* Light border color */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-  padding: 20px;
-  width: 250px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  background: linear-gradient(145deg, #ffffff, #f3f4f6);
+  border: 1px solid rgba(229, 231, 235, 0.5);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+              0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
 }
 
 .skill-block:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-color: rgba(255, 86, 111, 0.3);
 }
 
 .skill-block h3 {
-  margin-top: 0;
-  color: #333;
+  color: #2d3748;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.skill-block h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 3rem;
+  background: linear-gradient(90deg, #ff566f, #ff8c9f);
 }
 
 .skill-block p {
-  color: #666;
+  color: #4a5568;
+  line-height: 1.625;
+  font-size: 0.975rem;
 }
 
 /* Media Queries for Responsive Design */
@@ -191,6 +224,8 @@ h1 {
     width: 90%;
     margin: 20px auto;
     position: relative;
+    overflow: hidden;
+    padding: 0 10px;
   }
 
   .photo-container {
@@ -217,18 +252,57 @@ h1 {
     margin: 5px 0;
   }
 
+  .tab-content {
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .tab-content.active {
+    transform: translateX(0);
+  }
+
+  #bio:not(.active),
+  #skills:not(.active),
+  #publications:not(.active) {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    pointer-events: none;
+  }
+
   .skills-container {
+    grid-template-columns: 1fr;
+    padding: 0.75rem;
+    gap: 0.75rem;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    width: calc(100% - 1.5rem);
+    margin: 0 auto;
   }
 
   .skill-block {
-    width: 90%; /* Make skill blocks full width */
+    width: 85%;
+    margin: 0.25rem auto;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .skill-block {
+    width: 100%;
+    margin: 0.5rem 0;
   }
 
   .timeline-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 }
