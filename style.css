@@ -1,12 +1,6 @@
 /* Dark theme */
 body {
     font-family: "HelveticaNeue-Light", Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #0c0c0c;
-    color: #e0e0e0;
     margin: 0;
 }
 
