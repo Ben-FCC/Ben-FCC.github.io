@@ -6,36 +6,39 @@
     <title>Home | Ben-FCC</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
-<body>
-    <div class="container">
-        <h1>Feng-Chun Ben Chou</h1>
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-r from-red-600 via-purple-600 to-blue-600 text-gray-100"></body>
+    <div class="container text-center space-y-8">
+        <h1 class="text-5xl sm:text-6xl font-extrabold text-red-300 animate__animated animate__fadeInDown">Feng-Chun Ben Chou</h1>
         <div class="status">
-            <div class="terminal-container">
+            <div class="terminal-container mt-4">
                 <div class="terminal-box">
                     <span class="typed-text"></span>
                 </div>
             </div>
             <span class="cursor">&nbsp;</span>
-        <div class="gif">
-            <img src="assets/Brain_Models_Network.png", alt="Interacting_Brain_Models", width="500" height="auto">
         </div>
-        <div class="links">
-            <a href="Pages/About/About.html">
+        <div class="gif animate__animated animate__zoomIn py-8">
+            <img class="mx-auto max-w-xs md:max-w-md rounded-lg shadow-xl" src="assets/Brain_Models_Network_q.png" alt="Interacting_Brain_Models" width="500" height="auto">
+        </div>
+        <div class="links flex flex-wrap justify-center gap-6 text-xl animate__animated animate__fadeInUp">
+            <a class="hover:text-red-400 transition transform hover:scale-125" href="Pages/About/About.html">
                 <i class="fas fa-user-tie"></i> About</a>
-            <a href="https://www.linkedin.com/in/feng-chun-chou-855885273/" target="_blank">
+            <a class="hover:text-red-400 transition transform hover:scale-125" href="https://www.linkedin.com/in/feng-chun-chou-855885273/" target="_blank">
                 <i class="fab fa-linkedin"></i></a>
-            <a href="https://scholar.google.com/citations?user=oZ5rsb0AAAAJ&hl=en" target="_blank">
+            <a class="hover:text-red-400 transition transform hover:scale-125" href="https://scholar.google.com/citations?user=oZ5rsb0AAAAJ&hl=en" target="_blank">
                 <i class="fab fa-google"></i> Google Scholar</a>
-            <a href="https://x.com/FengChunChou" target="_blank">𝕏</a>
-            <a href="https://github.com/Ben-FCC" target="_blank">
+            <a class="hover:text-red-400 transition transform hover:scale-125" href="https://x.com/FengChunChou" target="_blank">𝕏</a>
+            <a class="hover:text-red-400 transition transform hover:scale-125" href="https://github.com/Ben-FCC" target="_blank">
                 <i class="fab fa-github"></i> Ben-FCC
             </a>
-            <a href="https://ben-fcc.github.io/Ben-FCC_CV/" target="_blank">
+            <a class="hover:text-red-400 transition transform hover:scale-125" href="https://ben-fcc.github.io/Ben-FCC_CV/" target="_blank">
                 <i class="fas fa-id-card"></i> CV
             </a>
-            <a href="mailto:f11227106@ntu.edu.tw">
+            <a class="hover:text-red-400 transition transform hover:scale-125" href="mailto:f11227106@ntu.edu.tw">
                 <i class="fas fa-envelope"></i>
             </a>
         </div>
