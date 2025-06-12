@@ -14,3 +14,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+https://github-readme-stats.vercel.app/api?username=ben-fcc&show_icons=true&theme=dracula
+[![Ben's GitHub stats]([https://github-readme-stats.vercel.app/api?username=anuraghazra](https://github-readme-stats.vercel.app/api?username=ben-fcc&show_icons=true&theme=dracula))](https://github.com/ben-fcc/github-readme-stats)
