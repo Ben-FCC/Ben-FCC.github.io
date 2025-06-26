@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News | My Research</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Apply the Inter font */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Basic dark mode setup if not using a framework's class-based toggle */
+        /* For production, it's better to use a JS toggle for dark mode */
+        /* @media (prefers-color-scheme: dark) {
+            html {
+                --tw-bg-opacity: 1;
+                background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+            }
+        } */
+    </style>
+    <script>
+        // Optional: JS to toggle dark mode manually if needed
+        // For this example, we'll rely on prefers-color-scheme which Tailwind handles automatically
+        tailwind.config = {
+          darkMode: 'class', // or 'media'
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ['Inter', 'sans-serif'],
+              },
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
+
+    <!-- Add a dark mode toggle button if you want manual control -->
+    <!-- 
+    <button id="theme-toggle" class="fixed top-4 right-4 z-50 ...">Toggle</button>
+    <script>
+        // Basic theme toggle logic
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+        });
+    </script> 
+    -->
+
+    <div class="container mx-auto px-4 py-12 md:py-16">
+        
+        <header class="text-center mb-10 md:mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-800 dark:text-white">News & Updates</h1>
+            <p class="mt-3 text-lg text-slate-600 dark:text-slate-400">The latest achievements and milestones from my research journey.</p>
+        </header>
+        
+        <!-- News Cards Grid -->
+        <div class="max-w-2xl mx-auto">
+            
+            <!-- News Card: TMB JCR Q1 -->
+            <div class="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden transition hover:shadow-2xl hover:-translate-y-1">
+                
+                <!-- Card Image -->
+                <!-- IMPORTANT: Replace this src with the actual path to your image -->
+                <img class="w-full h-auto object-cover" src="../assets/news/TMB_Q1.png" alt="Screenshot of the Technology, Mind, and Behavior JCR page">
+                
+                <div class="p-6 md:p-8">
+                    
+                    <!-- Tags / Badges -->
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Publication</span>
+                        <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-emerald-900 dark:text-emerald-300">Achievement</span>
+                    </div>
+
+                    <!-- Card Title -->
+                    <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">
+                        Major Milestone: 
+                        <a href="https://apa.org/pubs/journals/tmb/" class="text-indigo-600 dark:text-indigo-400 hover:underline" target="_blank" rel="noopener">
+                            TMB
+                        </a>
+                        Earns Q1 Rank in PSYCHOLOGY, MULTIDISCIPLINARY from 
+                        <a href="https://jcr.clarivate.com/jcr-jp/journal-profile?app=jcr&Init=Yes&journal=TECHNOL%20MIND%20BEHAV&authCode=null&year=2024&fromPage=/jcr/home&SrcApp=IC2LS" class="text-indigo-600 dark:text-indigo-400 hover:underline" target="_blank" rel="noopener">
+                            JCR
+                        </a>!
+                    </h2>
+
+                    <!-- Date -->
+                    <p class="text-sm text-slate-500 dark:text-slate-400 mb-5">Posted on June 26, 2025</p>
+                    
+                    <!-- Card Body / Personal Note -->
+                    <p class="text-slate-700 dark:text-slate-300 mb-6">
+                        I'm incredibly proud to share that <strong>Technology, Mind, and Behavior</strong>, the journal where I published my first, first-author paper, has achieved a <strong>Q1 ranking</strong> in its very first Journal Citation Reports (JCR) year. This is a fantastic recognition for the journal and a huge personal milestone.
+                    </p>
+                    
+                    <!-- Divider -->
+                    <hr class="border-slate-200 dark:border-slate-700 mb-6">
+                    
+                    <!-- Key Journal Details -->
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-semibold text-slate-800 dark:text-slate-200">Journal Highlights</h3>
+                        <dl class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 text-sm">
+                            <div class="flex flex-col">
+                                <dt class="font-medium text-slate-600 dark:text-slate-400">Journal Name</dt>
+                                <dd class="text-slate-800 dark:text-slate-200">Technology, Mind, and Behavior</dd>
+                            </div>
+                             <div class="flex flex-col">
+                                <dt class="font-medium text-slate-600 dark:text-slate-400">Publisher</dt>
+                                <dd class="text-slate-800 dark:text-slate-200">American Psychological Association</dd>
+                            </div>
+                            <div class="flex flex-col">
+                                <dt class="font-medium text-slate-600 dark:text-slate-400">Category</dt>
+                                <dd class="text-slate-800 dark:text-slate-200">Psychology, Multidisciplinary</dd>
+                            </div>
+                             <div class="flex flex-col">
+                                <dt class="font-medium text-slate-600 dark:text-slate-400">First JCR / New Rank</dt>
+                                <dd class="text-emerald-600 dark:text-emerald-400 font-bold text-base">2024 / Q1 Quartile</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <!-- Call to Action Button -->
+                    <div class="mt-8">
+                        <a href="#" class="inline-block w-full sm:w-auto text-center bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-4 focus:ring-indigo-300 dark:focus:ring-indigo-800 transition">
+                            View Journal Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- You can add more news cards here in the future -->
+            <!-- 
+            <div class="bg-white dark:bg-slate-800 rounded-xl shadow-lg ...">
+                ... Another News Card ...
+            </div> 
+            -->
+
+        </div>
+    </div>
+</body>
+</html>
