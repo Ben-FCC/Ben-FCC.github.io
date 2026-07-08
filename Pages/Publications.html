@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | Feng-Chun Ben Chou</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg: #fffafa;
+            --surface: #ffffff;
+            --surface-soft: #fff3f3;
+            --ink: #211819;
+            --muted: #6e5a5d;
+            --line: #ead7d9;
+            --accent: #b33a3f;
+            --accent-dark: #84292d;
+            --accent-soft: #f7dedf;
+            --shadow: 0 18px 52px rgba(93, 45, 47, 0.10);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(180deg, #fffafa 0%, #fff6f6 100%);
+            color: var(--ink);
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--accent-dark);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+        }
+
+        .page {
+            width: min(980px, calc(100% - 40px));
+            margin: 0 auto;
+            padding: 28px 0 72px;
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 58px;
+        }
+
+        .brand {
+            color: var(--accent);
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .nav a,
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            min-height: 42px;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            padding: 0 15px;
+            background: rgba(255, 255, 255, 0.72);
+            color: var(--ink);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .nav a:hover,
+        .button:hover {
+            border-color: rgba(179, 58, 63, 0.45);
+            background: var(--accent);
+            color: #ffffff;
+        }
+
+        header {
+            max-width: 780px;
+            margin-bottom: 34px;
+        }
+
+        .eyebrow {
+            margin: 0 0 10px;
+            color: var(--accent);
+            font-size: 0.82rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(2.4rem, 6vw, 4.8rem);
+            line-height: 1;
+            letter-spacing: 0;
+        }
+
+        .lede {
+            margin: 18px 0 0;
+            color: var(--muted);
+            font-size: 1.08rem;
+        }
+
+        .section {
+            margin-top: 30px;
+        }
+
+        .section h2 {
+            margin: 0 0 14px;
+            color: var(--accent-dark);
+            font-size: clamp(1.35rem, 3vw, 2rem);
+        }
+
+        .publication-list {
+            display: grid;
+            gap: 14px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .publication {
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            padding: clamp(18px, 3.4vw, 26px);
+            background: rgba(255, 255, 255, 0.82);
+            box-shadow: var(--shadow);
+        }
+
+        .publication p {
+            margin: 0;
+        }
+
+        .label {
+            display: inline-flex;
+            align-items: center;
+            min-height: 26px;
+            margin-bottom: 10px;
+            border-radius: 999px;
+            padding: 0 10px;
+            background: var(--accent-soft);
+            color: var(--accent-dark);
+            font-size: 0.78rem;
+            font-weight: 800;
+        }
+
+        .note {
+            margin-top: 28px;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 680px) {
+            .page {
+                width: calc(100% - 24px);
+                padding-top: 18px;
+            }
+
+            .topbar {
+                align-items: flex-start;
+                flex-direction: column;
+                margin-bottom: 40px;
+            }
+
+            .nav {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .nav a,
+            .button {
+                width: 100%;
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="page">
+        <div class="topbar">
+            <a class="brand" href="../index.html">Feng-Chun Ben Chou</a>
+            <nav class="nav" aria-label="Site navigation">
+                <a href="About/About.html">About</a>
+                <a href="News.html">News</a>
+                <a href="CV.html">CV</a>
+                <a href="../index.html">Home</a>
+            </nav>
+        </div>
+
+        <header>
+            <p class="eyebrow">Selected work</p>
+            <h1>Publications</h1>
+            <p class="lede">Journal articles, book chapters, and manuscripts listed from the current CV.</p>
+        </header>
+
+        <section class="section" aria-labelledby="published-title">
+            <h2 id="published-title">Published</h2>
+            <ul class="publication-list">
+                <li class="publication">
+                    <span class="label">Book Chapter</span>
+                    <p>Chen, P.-H. A., Chiu, T.-A. P., Hsiao, P.-Y. A., & Chou, F.-C. B. (2026). From experiences to preferences: neural insights through a naturalistic neuroimaging paradigm. In Fareri, D., Smith, D., & Lockwood, P. (Eds.), <em>Neuroeconomics: Core Topics and Current Directions</em>. pp. 409-421. Springer Cham. <a href="https://doi.org/10.1007/978-3-03202925-6_23" target="_blank" rel="noopener">https://doi.org/10.1007/978-3-03202925-6_23</a></p>
+                </li>
+                <li class="publication">
+                    <span class="label">Journal Article</span>
+                    <p>Chen, P.-H. A.,* Chou, F.-C. B.,* & Wang, T.-R. H.* (2025). Rethinking acculturation: placing social interaction at the center of cultural adaptation. <em>Social and Personality Psychology Compass, 19</em>(11), e70099. <a href="http://dx.doi.org/10.1111/spc3.70099" target="_blank" rel="noopener">http://dx.doi.org/10.1111/spc3.70099</a></p>
+                </li>
+                <li class="publication">
+                    <span class="label">Book Chapter</span>
+                    <p>Chou, F.-C. B.,* & Chen, P.-H. A.* (2025). Beyond dyadic interaction and shared experience: rethinking social connections. <em>Psychology of Learning and Motivation</em>. <a href="https://doi.org/10.1016/bs.plm.2025.03.002" target="_blank" rel="noopener">https://doi.org/10.1016/bs.plm.2025.03.002</a></p>
+                </li>
+                <li class="publication">
+                    <span class="label">Journal Article</span>
+                    <p>Chou, F.-C. B.,* Chen, Y.-C. C.,* Kuo, Y.-S. A., Hsiao, P.-Y. A., Lin, C. R., Huang, Y.-W. Y., Peng, W.-L., Pan, H.-J. S., & Chen, P.-H. A. (2025). Facial insights: An exploration of similarity in spontaneous facial behaviors during pandemic lockdown. <em>Technology, Mind, and Behavior, 6</em>(2). <a href="https://doi.org/10.1037/tmb0000166" target="_blank" rel="noopener">https://doi.org/10.1037/tmb0000166</a></p>
+                </li>
+                <li class="publication">
+                    <span class="label">Journal Article</span>
+                    <p>Hsiao, P.-Y. A., Kim, M. J., Chou, F.-C. B., & Chen, P.-H. A. (2024). Intersubject representational similarity analysis uncovers the impact of state anxiety on brain activation patterns in the human extrastriate cortex. <em>Brain Imaging and Behavior, 18</em>(2), 1-9. <a href="https://doi.org/10.1007/s11682-024-00854-1" target="_blank" rel="noopener">https://doi.org/10.1007/s11682-024-00854-1</a></p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section" aria-labelledby="review-title">
+            <h2 id="review-title">Manuscripts Under Review</h2>
+            <ul class="publication-list">
+                <li class="publication">
+                    <span class="label">Under Review</span>
+                    <p>Hsu, C.-H., Chou, F.-C. B., & Chen, P.-H. A. (Under review). Interaction Context and Epistemic Posture in LLM Responses to Conspiracy-Style Reasoning.</p>
+                </li>
+                <li class="publication">
+                    <span class="label">Under Review</span>
+                    <p>Hsu, C.-H., Chou, F.-C. B., & Chen, P.-H. A. (Under review). Tracing Psychometric Inference in Large Language Models.</p>
+                </li>
+                <li class="publication">
+                    <span class="label">Under Review</span>
+                    <p>Chou, F.-C. B.,* Chang, C.-Y. E.,* Lee, W.-T. W., Chang, J.-H., & Chen, P.-H. A. (Under review). Friendship in Mind: Linking mental representations of friendships to well-being.</p>
+                </li>
+                <li class="publication">
+                    <span class="label">Under Review</span>
+                    <p>Hsiao, P.-Y. A.,* Chou, F.-C. B.,* & Chen, P.-H. A. (Under review). Intersubject variations in national identity ideology map onto variations in neural dynamics during geopolitical video viewing.</p>
+                </li>
+            </ul>
+        </section>
+
+        <p class="note">* indicates co-first authorship. For the full CV, use the mobile-friendly CV page.</p>
+    </main>
+</body>
+</html>

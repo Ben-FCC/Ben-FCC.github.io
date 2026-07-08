@@ -3,50 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Ben-FCC</title>
+    <title>Feng-Chun Ben Chou</title>
+    <link rel="icon" href="data:,">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
-<body class="min-h-screen flex items-center justify-center bg-gradient-to-r from-red-600 via-purple-600 to-blue-600 text-gray-100"></body>
-    <div class="container text-center space-y-8">
-        <h1 class="text-5xl sm:text-6xl font-extrabold text-red-300 animate__animated animate__fadeInDown">Feng-Chun Ben Chou</h1>
-        <div class="status">
-            <div class="terminal-container mt-4">
-                <div class="terminal-box">
+<body>
+    <main class="site-shell">
+        <section class="hero" aria-labelledby="home-title">
+            <div class="hero-copy">
+                <p class="eyebrow">Ph.D. student · National Taiwan University</p>
+                <h1 id="home-title">Feng-Chun Ben Chou</h1>
+                <div class="status" aria-label="Research status">
                     <span class="typed-text"></span>
                 </div>
+                <p class="intro">
+                    I study interacting minds with naturalistic paradigms, multimodal behavior,
+                    neuroimaging, social network analysis, and computational approaches.
+                </p>
+                <nav class="primary-links" aria-label="Primary navigation">
+                    <a href="Pages/About/About.html"><i class="fa-solid fa-user"></i><span>About</span></a>
+                    <a href="Pages/News.html"><i class="fa-solid fa-bullhorn"></i><span>News</span></a>
+                    <a href="Pages/Publications.html"><i class="fa-solid fa-book-open"></i><span>Publications</span></a>
+                    <a href="Pages/CV.html"><i class="fa-solid fa-id-card"></i><span>CV</span></a>
+                </nav>
+                <div class="social-links" aria-label="External profiles">
+                    <a href="https://scholar.google.com/citations?user=oZ5rsb0AAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+                    <a href="https://github.com/Ben-FCC" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/feng-chun-chou-855885273/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://x.com/FengChunChou" target="_blank" rel="noopener" aria-label="X">X</a>
+                    <a href="mailto:f11227106@ntu.edu.tw" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
             </div>
-            <span class="cursor">&nbsp;</span>
-        </div>
-        <div class="gif animate__animated animate__zoomIn py-8">
-            <img class="mx-auto max-w-xs md:max-w-md rounded-lg shadow-xl" src="assets/Brain_Models_Network_q.png" alt="Interacting_Brain_Models" width="500" height="auto">
-        </div>
-        <div class="links flex flex-wrap justify-center gap-6 text-xl animate__animated animate__fadeInUp">
-            <a class="hover:text-red-400 transition transform hover:scale-125" href="Pages/About/About.html">
-                <i class="fas fa-user-tie"></i> About</a>
-            <a class="hover:text-red-400 transition transform hover:scale-125" href="Pages/News.html">
-                <i class="fa-solid fa-bullhorn"></i> News</a>
-            <a class="hover:text-red-400 transition transform hover:scale-125" href="https://www.linkedin.com/in/feng-chun-chou-855885273/" target="_blank">
-                <i class="fab fa-linkedin"></i></a>
-            <a class="hover:text-red-400 transition transform hover:scale-125" href="https://scholar.google.com/citations?user=oZ5rsb0AAAAJ&hl=en" target="_blank">
-                <i class="fab fa-google"></i> Google Scholar</a>
-            <a class="hover:text-red-400 transition transform hover:scale-125" href="https://x.com/FengChunChou" target="_blank">𝕏</a>
-            <a class="hover:text-red-400 transition transform hover:scale-125" href="https://github.com/Ben-FCC" target="_blank">
-                <i class="fab fa-github"></i> Ben-FCC
-            </a>
-            <a class="hover:text-red-400 transition transform hover:scale-125" href="https://ben-fcc.github.io/Ben-FCC_CV/" target="_blank">
-                <i class="fas fa-id-card"></i> CV
-            </a>
-            <a class="hover:text-red-400 transition transform hover:scale-125" href="mailto:f11227106@ntu.edu.tw">
-                <i class="fas fa-envelope"></i>
-            </a>
-        </div>
-    </div>
-    
+            <div class="hero-visual" aria-label="Research network figure">
+                <img src="assets/Brain_Models_Network_q.png" alt="Network visualization of interacting brain models">
+            </div>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

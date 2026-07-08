@@ -19,3 +19,11 @@ Here are some ideas to get you started:
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ben-fcc&layout=compact&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)
 
+## Website Notes
+
+This repository also hosts the personal website at `index.html`.
+
+- The homepage, About page, News page, CV page, and Publications page use a restrained red-and-white visual style with responsive layouts for desktop and mobile screens.
+- `Pages/Publications.html` turns the publication and manuscript entries from the current CV into a web-readable page.
+- `Pages/CV.html` keeps a desktop PDF preview while giving mobile users direct open and download actions for the CV PDF.
+- `Pages/News.html` now highlights the ICML mechanistic interpretability workshop poster update and keeps earlier publication/conference milestones in the same visual system.

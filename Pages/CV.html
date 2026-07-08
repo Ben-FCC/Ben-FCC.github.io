@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Feng-Chun Ben Chou</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg: #fffafa;
+            --surface: #ffffff;
+            --surface-soft: #fff3f3;
+            --ink: #211819;
+            --muted: #6e5a5d;
+            --line: #ead7d9;
+            --accent: #b33a3f;
+            --accent-dark: #84292d;
+            --accent-soft: #f7dedf;
+            --shadow: 0 18px 52px rgba(93, 45, 47, 0.10);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(180deg, #fffafa 0%, #fff6f6 100%);
+            color: var(--ink);
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .page {
+            width: min(1100px, calc(100% - 40px));
+            margin: 0 auto;
+            padding: 28px 0 56px;
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 42px;
+        }
+
+        .brand {
+            color: var(--accent);
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .nav,
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav {
+            justify-content: flex-end;
+        }
+
+        .nav a,
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            min-height: 42px;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            padding: 0 15px;
+            background: rgba(255, 255, 255, 0.72);
+            color: var(--ink);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .nav a:hover,
+        .button:hover {
+            border-color: rgba(179, 58, 63, 0.45);
+            background: var(--accent);
+            color: #ffffff;
+        }
+
+        header {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            gap: 24px;
+            align-items: end;
+            margin-bottom: 26px;
+        }
+
+        .eyebrow {
+            margin: 0 0 10px;
+            color: var(--accent);
+            font-size: 0.82rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(2.4rem, 6vw, 4.8rem);
+            line-height: 1;
+            letter-spacing: 0;
+        }
+
+        .lede {
+            max-width: 680px;
+            margin: 18px 0 0;
+            color: var(--muted);
+            font-size: 1.08rem;
+        }
+
+        .pdf-frame {
+            width: 100%;
+            height: min(78vh, 900px);
+            border: 1px solid var(--line);
+            border-radius: 24px;
+            background: var(--surface);
+            box-shadow: var(--shadow);
+        }
+
+        .mobile-note {
+            display: none;
+            margin-top: 18px;
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            padding: 18px;
+            background: var(--surface);
+            color: var(--muted);
+        }
+
+        @media (max-width: 760px) {
+            .page {
+                width: calc(100% - 24px);
+                padding-top: 18px;
+            }
+
+            .topbar,
+            header {
+                align-items: flex-start;
+                grid-template-columns: 1fr;
+                flex-direction: column;
+            }
+
+            .nav,
+            .actions {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .nav a,
+            .button {
+                width: 100%;
+                padding: 0 10px;
+            }
+
+            .pdf-frame {
+                display: none;
+            }
+
+            .mobile-note {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="page">
+        <div class="topbar">
+            <a class="brand" href="../index.html">Feng-Chun Ben Chou</a>
+            <nav class="nav" aria-label="Site navigation">
+                <a href="About/About.html">About</a>
+                <a href="News.html">News</a>
+                <a href="Publications.html">Publications</a>
+                <a href="../index.html">Home</a>
+            </nav>
+        </div>
+
+        <header>
+            <div>
+                <p class="eyebrow">Curriculum vitae</p>
+                <h1>CV</h1>
+                <p class="lede">
+                    View the CV in the browser on desktop, or open/download the PDF directly on mobile.
+                </p>
+            </div>
+            <div class="actions">
+                <a class="button" href="https://ben-fcc.github.io/Ben-FCC_CV/CV.pdf" target="_blank" rel="noopener">
+                    <i class="fa-solid fa-up-right-from-square"></i> Open PDF
+                </a>
+                <a class="button" href="https://ben-fcc.github.io/Ben-FCC_CV/CV.pdf" download>
+                    <i class="fa-solid fa-download"></i> Download
+                </a>
+            </div>
+        </header>
+
+        <iframe class="pdf-frame" src="https://ben-fcc.github.io/Ben-FCC_CV/CV.pdf" title="Feng-Chun Ben Chou CV"></iframe>
+
+        <div class="mobile-note">
+            <strong>Mobile viewing:</strong> PDF embeds can be unreliable on phones, so this page prioritizes the
+            direct open and download buttons above for a cleaner mobile experience.
+        </div>
+    </main>
+</body>
+</html>
