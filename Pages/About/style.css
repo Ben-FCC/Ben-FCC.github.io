@@ -145,6 +145,17 @@ h2 {
   font-size: clamp(1.35rem, 3vw, 2rem);
 }
 
+.bio-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 320px);
+  gap: clamp(28px, 5vw, 56px);
+  align-items: center;
+}
+
+.bio-details {
+  min-width: 0;
+}
+
 .timeline {
   display: grid;
   gap: 14px;
@@ -171,9 +182,9 @@ h2 {
 }
 
 .photo-container {
-  width: min(220px, 70vw);
+  width: min(320px, 100%);
   aspect-ratio: 1;
-  margin-top: 26px;
+  justify-self: center;
   border: 1px solid var(--line);
   border-radius: 50%;
   overflow: hidden;
@@ -247,5 +258,14 @@ h2 {
   .event {
     grid-template-columns: 1fr;
     gap: 4px;
+  }
+
+  .bio-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .photo-container {
+    width: min(220px, 70vw);
   }
 }

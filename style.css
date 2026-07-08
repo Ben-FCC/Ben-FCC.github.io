@@ -32,7 +32,7 @@ a {
 }
 
 .site-shell {
-    width: min(1120px, calc(100% - 40px));
+    width: min(1240px, calc(100% - 48px));
     min-height: 100vh;
     margin: 0 auto;
     display: flex;
@@ -43,12 +43,15 @@ a {
 .hero {
     width: 100%;
     display: grid;
-    grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
-    gap: clamp(32px, 6vw, 80px);
+    grid-template-columns: minmax(0, 1.28fr) minmax(280px, 0.72fr);
+    gap: clamp(32px, 5vw, 64px);
     align-items: center;
 }
 
 .eyebrow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
     margin: 0 0 12px;
     color: var(--accent);
     font-size: 0.82rem;
@@ -58,13 +61,14 @@ a {
 }
 
 h1 {
-    max-width: 720px;
+    max-width: none;
     margin: 0;
     color: var(--ink);
-    font-size: clamp(2.8rem, 7vw, 6.3rem);
+    font-size: clamp(3rem, 4.45vw, 4.9rem);
     font-weight: 760;
     letter-spacing: 0;
-    line-height: 0.96;
+    line-height: 1.02;
+    white-space: nowrap;
 }
 
 .status {
@@ -161,6 +165,11 @@ h1 {
     .hero {
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+
+    h1 {
+        font-size: clamp(2.55rem, 10.5vw, 3.6rem);
+        white-space: normal;
     }
 
     .hero-copy {
