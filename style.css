@@ -32,7 +32,7 @@ a {
 }
 
 .site-shell {
-    width: min(1240px, calc(100% - 48px));
+    width: min(1280px, calc(100% - 64px));
     min-height: 100vh;
     margin: 0 auto;
     display: flex;
@@ -43,8 +43,8 @@ a {
 .hero {
     width: 100%;
     display: grid;
-    grid-template-columns: minmax(0, 1.28fr) minmax(280px, 0.72fr);
-    gap: clamp(32px, 5vw, 64px);
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 420px);
+    gap: clamp(72px, 8vw, 128px);
     align-items: center;
 }
 
@@ -64,7 +64,7 @@ h1 {
     max-width: none;
     margin: 0;
     color: var(--ink);
-    font-size: clamp(3rem, 4.45vw, 4.9rem);
+    font-size: clamp(3rem, 3.2vw, 3.55rem);
     font-weight: 760;
     letter-spacing: 0;
     line-height: 1.02;
